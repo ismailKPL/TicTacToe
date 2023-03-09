@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #7DB86F;
+    color: #1c4d35;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.titleTTT {
+    text-align: center;
+    font-size: 5vw;
+    margin: 3vw 0 0 0;
+    font-family: 'Melodrama', serif;
+    transition: ease-in-out 0.5s;
+}
+.titleTTT:hover {
+    transition: ease 0.4s;
+    text-shadow: #1c4d35 0px 0px 60px;
+    color: #7DB86F;
+}
+
+#playerText {
+    text-align: center;
+    margin-bottom: 2vw;
+    font-family: 'Melodrama', serif;
+    position: relative;
+    z-index: 9999;
+    font-size: 2vw;
+}
+
+.restartBtn {
+    display: block;
+    margin: 2vw auto;
+    min-width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #1c4d35;
+    border: #139053 3px solid;
+    color: #7DB86F;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 4%;
+    position: relative;
+    z-index: 999999;
+}
+
+.restartBtn:hover {
+    transition: ease 0.2s;
+    background: #7DB86F;
+    color: #1c4d35;
+}
+
+@media screen and (min-width:2000px) {
+
+    .restartBtn {
+        min-width: 200px;
+        padding: 15px; 
+        font-size: 16px;
+        margin-top: 5%;
+    }
+
+}
+
+.parentTab {
+    margin: 0 auto;
+    padding: 20px 20px;
+    max-width: 60%;
+    display: grid;
+    grid-template-columns: 140px 140px 140px;
+    grid-gap: 15px;
+    justify-content: center;
+    /* background: rgb(68 68 68 / 61%); */
+}
+
+.case {
+    width: 140px;
+    height: 140px;
+    background: #E7E08B;
+    border: #139053 3px solid;
+    transition: ease 0.2s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+    font-family: 'Mynerve', cursive;
+    border-radius: 10px;
+}
+
+.case:hover {
+    opacity: 0.8;
+}
+
+@media screen and (max-width:1550px) {
+    .parentTab{
+        grid-template-columns: 100px 100px 100px
+    }
+
+    .case {
+        width: 100px;
+    height: 100px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    header {
+        margin-top: 10%;
+        width: 100%;
+    }
+
+    .parentTab {
+        margin-top: 15%;
+    }
+
+    .titleTTT{ 
+        font-size: 10vw;
+    }
+
+    #playerText {
+        font-size: 5vw;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .parentTab {
+        max-width: 95%;
+        grid-gap: 10px;
+    }
+
+    .case {
+        font-size: 15vw;
+    }
+}
+
+@media screen and (max-width:340px) {
+    .parentTab {
+        grid-template-columns: 80px 80px 80px;
+    }
+
+    .case {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.restartDIV {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: #000000bd;
+    width: 70%;
+    height: 95vh;
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    top: 3%;
+    border-radius: 25px;
+    left: 15%;
+    filter: blur(278px);
+}
+
+@media screen and (max-width:600px) {
+    .restartDIV{
+        width: 90%;
+        left: 5%;
+    }
+}
